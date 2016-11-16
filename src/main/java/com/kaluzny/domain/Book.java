@@ -2,11 +2,12 @@ package com.kaluzny.domain;
 
 public class Book {
 
-    private Long id;
+    private int id;
     private String name;
     private String description;
 
-    public Book(String name, String description) {
+    public Book(int id, String name, String description) {
+        this.id = id;
         this.name = name;
         this.description = description;
     }
@@ -14,7 +15,11 @@ public class Book {
     public Book() {
     }
 
-    public Long getId() {
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getId() {
         return id;
     }
 

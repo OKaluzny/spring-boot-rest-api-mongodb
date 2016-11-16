@@ -35,7 +35,7 @@ public class BookController {
     @RequestMapping(
             method = RequestMethod.GET,
             value = "/{id}")
-    public ResponseEntity<Book> getBookWithId(@PathVariable Long id) {
+    public ResponseEntity<Book> getBookWithId(@PathVariable int id) {
         return new ResponseEntity<>(repository.findOne(id), HttpStatus.OK);
     }
 
@@ -49,7 +49,7 @@ public class BookController {
     @RequestMapping(
             method = RequestMethod.DELETE,
             value = "/{id}")
-    public void deleteBookWithId(@PathVariable Long id) {
+    public void deleteBookWithId(@PathVariable int id) {
         repository.delete(id);
     }
 

@@ -4,7 +4,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/OKaluzny/spring-rest-api-mongodb/badge.svg?branch=master)](https://coveralls.io/github/OKaluzny/spring-rest-api-mongodb?branch=master)
 
 ### Used tools:
-* MongoBD embedded database;
+* MongoDB embedded database;
 * Basic authentication.
 
 #####To run this application use:

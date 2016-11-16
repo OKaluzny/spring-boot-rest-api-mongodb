@@ -1,6 +1,6 @@
 ## Simple RESTful Web Service with Spring Boot and MongoDB.
 
-[![Build Status](https://travis-ci.org/OKaluzny/RESTfulWebService.svg?branch=master)](https://travis-ci.org/OKaluzny/RESTfulWebService)
+[![Build Status](https://travis-ci.org/OKaluzny/spring-rest-api-mongodb.svg?branch=master)](https://travis-ci.org/OKaluzny/spring-rest-api-mongodb)
 
 ### Used tools:
 * MongoBD embedded database;

@@ -1,7 +1,10 @@
 package com.kaluzny.domain;
 
+import org.springframework.data.annotation.Id;
+
 public class Book {
 
+    @Id
     private int id;
     private String name;
     private String description;

@@ -19,19 +19,19 @@ public class BookController {
     }
 
     @RequestMapping(method = RequestMethod.POST)
-    public void addBook(@RequestBody Book book) {
+    public void createBook(@RequestBody Book book) {
         repository.save(book);
     }
 
     @RequestMapping(method = RequestMethod.GET)
-    public List<Book> getAllBooks() {
+    public List<Book> findAllBooks() {
         return repository.findAll();
     }
 
     @RequestMapping(
             method = RequestMethod.GET,
             value = "/{id}")
-    public Book getBookWithId(@PathVariable Integer id) {
+    public Book findBookById(@PathVariable Integer id) {
 
         return repository.findOne(id);
     }

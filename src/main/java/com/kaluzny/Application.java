@@ -10,8 +10,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class Application implements CommandLineRunner {
 
+    private BookRepository repository;
+
     @Autowired
-    private BookRepository bookRepository;
+    public void setRepository(BookRepository repository) {
+        this.repository = repository;
+    }
 
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
@@ -20,7 +24,9 @@ public class Application implements CommandLineRunner {
     @Override
     public void run(String... arg0) throws Exception {
 
-        bookRepository.save(new Book(1, "Java SE", "Programming"));
-        bookRepository.save(new Book(2, "prasad", "prasad@gmail.com"));
+        repository.deleteAll();
+
+        repository.save(new Book(1, "Java SE", "Programming"));
+        repository.save(new Book(2, "Java EE", "Programming"));
     }
 }

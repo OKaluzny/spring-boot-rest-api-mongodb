@@ -14,6 +14,7 @@ logging:
     console: "%d %-5level %logger : %msg%n"
   level:
     org.springframework: INFO
+    org.mongodb: DEBUG
 
 # Server configuration
 server:

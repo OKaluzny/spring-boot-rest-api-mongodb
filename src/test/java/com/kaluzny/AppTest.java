@@ -24,6 +24,15 @@ public class AppTest {
     }
 
     @Test
+    public void createBook() {
+        Book book = new Book(3, "Java 8 in Action", "Programming");
+        Book savedBook = repository.save(book);
+        Book newBook = repository.findOne(savedBook.getId());
+        assertEquals("Java 8 in Action", newBook.getName());
+        assertEquals("Programming", newBook.getDescription());
+    }
+
+    @Test
     public void findAllBooks() {
         List<Book> books = repository.findAll();
         assertNotNull(books);
@@ -34,14 +43,5 @@ public class AppTest {
     public void findBookById() {
         Book book = repository.findOne(1);
         assertNotNull(book);
-    }
-
-    @Test
-    public void createBook() {
-        Book book = new Book(3, "Java 8 in Action", "Programming");
-        Book savedBook = repository.save(book);
-        Book newBook = repository.findOne(savedBook.getId());
-        assertEquals("Java 8 in Action", newBook.getName());
-        assertEquals("Programming", newBook.getDescription());
     }
 }

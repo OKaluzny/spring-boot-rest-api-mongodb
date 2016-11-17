@@ -45,11 +45,4 @@ public class AppTest {
         Book book = repository.findOne(1);
         assertNotNull(book);
     }
-
-    @Test
-    public void deleteBookWithId() {
-        Book book = repository.findOne(1);
-        repository.delete(book);
-        assertNotNull(book);
-    }
 }

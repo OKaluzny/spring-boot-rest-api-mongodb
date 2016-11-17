@@ -52,9 +52,4 @@ public class AppTest {
         repository.delete(book);
         assertNotNull(book);
     }
-
-    @Test
-    public void deleteAllBooks() {
-        repository.deleteAll();
-    }
 }

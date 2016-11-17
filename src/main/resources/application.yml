@@ -6,7 +6,9 @@ spring:
 # Database
   data:
     mongodb:
-      port: 51215
+      host: localhost
+      port: 27017
+      database: Books
 
 # Logging
 logging:

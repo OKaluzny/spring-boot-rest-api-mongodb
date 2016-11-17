@@ -6,13 +6,14 @@ spring:
 # Database
   data:
     mongodb:
-      port: 0
+      port: 51215
 
 # Logging
 logging:
   pattern:
     console: "%d %-5level %logger : %msg%n"
   level:
+    com.kaluzny: DEBUG
     org.springframework: INFO
     org.mongodb: DEBUG
 

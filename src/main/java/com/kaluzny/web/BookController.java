@@ -2,12 +2,15 @@ package com.kaluzny.web;
 
 import com.kaluzny.domain.Book;
 import com.kaluzny.domain.BookRepository;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
+@Slf4j
 @RequestMapping("/api/books")
 public class BookController {
 

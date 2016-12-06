@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.kaluzny</groupId>
-    <artifactId>springboot-rest-api-mongodb</artifactId>
+    <artifactId>spring-boot-rest-api-mongodb</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 

@@ -2,14 +2,12 @@
 spring:
   profiles:
     active: development
-
 # Database
   data:
     mongodb:
       host: localhost
       port: 27017
       database: Books
-
 # Logging
 logging:
   pattern:
@@ -18,8 +16,12 @@ logging:
     com.kaluzny: DEBUG
     org.springframework: INFO
     org.mongodb: DEBUG
-
 # Server configuration
 server:
   port: 8080
   sessionTimeout: 30
+# Security configuration
+security:
+  user:
+    name: user
+    password: user
